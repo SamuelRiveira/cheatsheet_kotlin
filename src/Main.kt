@@ -15,6 +15,8 @@ fun main(){
     Condiciones()
     println("\n----- Bucle For -----\n")
     BucleFor(lista)
+    println("\n----- Bucle While -----\n")
+    BucleWhile(lista)
 }
 
 fun listaMutable() {
@@ -43,5 +45,13 @@ fun Condiciones(){
 fun BucleFor(lista: MutableList<Int>) {
     for (numero in lista) {
         println(numero)
+    }
+}
+
+fun BucleWhile(lista: MutableList<Int>){
+    var numero = 0
+    while (numero < lista.count()) {
+        println(lista[numero])
+        numero++
     }
 }
