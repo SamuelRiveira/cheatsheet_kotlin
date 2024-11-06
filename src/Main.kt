@@ -9,7 +9,8 @@ fun main(){
     println("Entero: $intNum, Double:  $doubleNum, Flotante: $floatNum, String: $string, Boolean: $boolean")
     println("\n----- Lista Mutable -----\n")
     listaMutable()
-
+    println("\n----- Mapa -----\n")
+    Mapa()
 }
 
 fun listaMutable() {
@@ -19,3 +20,10 @@ fun listaMutable() {
     println("Lista modificada: $lista")
 }
 
+fun Mapa(){
+    val myMap = mutableMapOf("Manuel" to 48, "Javier" to 36)
+    println("Mapa original: $myMap")
+    myMap["Rodrigo"] = 23
+    println("Mapa Modificado: $myMap")
+    println("Valor de Rodrigo: ${myMap["Rodrigo"]}")
+}
