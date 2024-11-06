@@ -13,6 +13,8 @@ fun main(){
     Mapa()
     println("\n----- Condiciones -----\n")
     Condiciones()
+    println("\n----- Bucle For -----\n")
+    BucleFor(lista)
 }
 
 fun listaMutable() {
@@ -35,5 +37,11 @@ fun Condiciones(){
 
     if (numero == 2) {
         println("Correcto")
+    }
+}
+
+fun BucleFor(lista: MutableList<Int>) {
+    for (numero in lista) {
+        println(numero)
     }
 }
