@@ -19,6 +19,8 @@ fun main(){
     BucleWhile(lista)
     println("\n----- When -----\n")
     When()
+    println("\n----- Clases -----\n")
+    Clases()
 }
 
 fun listaMutable() {
@@ -71,4 +73,12 @@ fun When(){
         else -> "Día inválido"
     }
     println(resultado)
+}
+
+fun Clases(){
+    class MiClase(val nombre: String, val edad: Int)
+
+    val miClase = MiClase("Samu", 19)
+    println("Nombre: ${miClase.nombre}")
+    println("Edad: ${miClase.edad}")
 }
