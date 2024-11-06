@@ -11,6 +11,8 @@ fun main(){
     listaMutable()
     println("\n----- Mapa -----\n")
     Mapa()
+    println("\n----- Condiciones -----\n")
+    Condiciones()
 }
 
 fun listaMutable() {
@@ -26,4 +28,12 @@ fun Mapa(){
     myMap["Rodrigo"] = 23
     println("Mapa Modificado: $myMap")
     println("Valor de Rodrigo: ${myMap["Rodrigo"]}")
+}
+
+fun Condiciones(){
+    var numero = 2
+
+    if (numero == 2) {
+        println("Correcto")
+    }
 }
