@@ -21,6 +21,8 @@ fun main(){
     When()
     println("\n----- Clases -----\n")
     Clases()
+    println("\n----- Null Safety -----\n")
+    NullSafety()
 }
 
 fun listaMutable() {
@@ -81,4 +83,13 @@ fun Clases(){
     val miClase = MiClase("Samu", 19)
     println("Nombre: ${miClase.nombre}")
     println("Edad: ${miClase.edad}")
+}
+
+fun NullSafety(){
+    var name: String? = null
+    name?.let {
+        println("Mi nombre es $it")
+    }?: run {
+        println("No tengo nombre")
+    }
 }
